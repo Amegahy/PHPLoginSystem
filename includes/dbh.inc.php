@@ -1,5 +1,5 @@
 <?php 
-
+ 
 // Change these to fit your database 
 $dbServername = "localhost";
 $dbUsername = "root";
