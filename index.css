@@ -1,0 +1,263 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/********** Custom code **************/
+body {
+    overflow: auto;
+ 	min-width: 1000px;
+	background-color: white;
+}
+
+/** Header tag **/
+
+/* Nav bar */
+header nav ul{
+	float: left;
+}
+
+header nav ul li{
+	float: left;
+	list-style: none;
+}
+
+header nav ul li a{
+	font-family: arial;
+	font-size: 15px;
+	color: red;
+	line-height:63px;
+}
+
+/* Nav-login bar */
+header .login {
+	background-color: #002266;
+	width:100%;
+	border-style: solid;
+	border-color: black;
+  	border-width: 5px 0px 5px 0px;
+  	padding: 0px 0px 20px 0px;
+}
+
+header .login form{
+	padding-bottom: 20px;	
+}
+
+header .login form input{
+	float: left;
+	margin-right: 30px;
+	width: 300px;
+	outline: none !important;
+	padding: 10px;
+	border: solid;
+	border-width: 0px 5px 0px 5px;
+	border-color: black;
+	background-color: white;
+	font-family: Segoe UI Light;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+}
+
+header .login button{
+	float: right;
+	margin-left: 30px;
+	padding: 10px;
+	border: solid;
+	border-width: 0px 5px 0px 5px;
+	outline: none !important;
+	border-color: black;
+	background-color: #4d88ff;
+	font-family: Segoe UI Light;
+	font-size: 15px;
+	font-weight: bolder ;
+	color: black;
+	cursor: pointer;	
+}
+
+header .login form button: hover{
+	background-color: #ccc;	
+}
+
+header .login a{
+	float: right;
+	border: none;
+	text-decoration: none !important;
+	font-family: Segoe UI Light;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	cursor: pointer;	
+}
+
+/* Main container */
+.main-container {
+	padding-top: 40px;
+}
+
+.main-container h1{
+	padding-top: 30px;
+	font-family: Segoe UI Light;
+	font-size: 20px;
+	font-weight: bold;
+	line-height:50px;
+	color: white;
+	text-align: center;
+}
+
+.main-container h2{
+	padding-top: 10px;
+	font-family: Segoe UI Light;
+	font-size: 15px;
+	font-weight: bold;
+	line-height:20px;
+	color: red;
+	text-align: left;
+}
+
+.main-container p{
+	padding-top: 10px;
+	font-family: Arial Unicode MS;
+	font-size: 16px;
+	text-align: left;
+}
+
+/* Main wrapper */
+.main-wrapper {
+	margin:0 auto;
+	width: 90%;
+}
+
+/* Sign up form */
+.signup-form{
+	background-color: #262626;
+	width: 500px;
+	margin: 40px auto;
+	padding: 10px 0px;
+}
+
+.signup-form input{
+	width: 440px;	
+	height: 40px;
+	padding: 0px 5%;
+	margin: 5px;
+	border: none;
+	outline: none !important;
+	background-color: white;
+	font-family: Segoe UI Light;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.signup-form button{
+	display: block;
+	margin: 10px auto;
+	width: 20%;	
+	height: 40px;
+	border: none;
+	background-color: #6699cc;
+	font-family: Segoe UI Light;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	cursor: pointer;	
+}
