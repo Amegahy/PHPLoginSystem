@@ -1,0 +1,28 @@
+/* DOCUMENT INFORMATION
+    - Document: Global structure
+    - Author: Alex Megahy
+    - Description: All structural classes used globally
+------------------------------------------- */
+
+body{
+    background-color: $body-BG;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+button, 
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+/* Main content wrapper */
+.wrapper {
+    background-color: $wrapper-BG;
+    height: 100%;
+    margin: 0 auto;
+    padding: .5em;
+    width: 80%;
+}

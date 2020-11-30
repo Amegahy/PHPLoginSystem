@@ -1,5 +1,6 @@
 <?php
-include_once 'header.php';
+$cssFile = "index.css";
+include_once 'includes/globals/header.php';
 ?>
 
 <h3>
@@ -13,5 +14,5 @@ include_once 'header.php';
 </h3>
 
 <?php
-include_once 'footer.php';
+include_once 'includes/globals/footer.php';
 ?>

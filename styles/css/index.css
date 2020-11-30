@@ -1,0 +1,66 @@
+/* DOCUMENT INFORMATION
+    - Document: index.php Styling
+    - Author: Alex Megahy
+    - Description: All imports used on index.php
+------------------------------------------- */
+/********** Globals **********/
+/* DOCUMENT INFORMATION
+    - Document: All global styling
+    - Author: Alex Megahy
+    - Description: All imports used on gloablly
+------------------------------------------- */
+/* DOCUMENT INFORMATION
+    - Document: Global variables
+    - Author: Alex Megahy
+    - Description: All variables used globally
+------------------------------------------- */
+/* Core colours */
+/* Page */
+/* Wrapper */
+/* Navigation Bar */
+/* Login */
+/* Register */
+/* DOCUMENT INFORMATION
+    - Document: Navigation Bar Styling
+    - Author: Alex Megahy
+    - Description: All styles used for nav bar
+------------------------------------------- */
+/* Navigation bar container */
+.nav-bar {
+  background-color: #002266;
+  border: 1px solid #000000;
+  display: inline-flex;
+  height: auto;
+  padding: 1em 0.5em;
+  width: 100%;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: Global structure
+    - Author: Alex Megahy
+    - Description: All structural classes used globally
+------------------------------------------- */
+body {
+  background-color: #464646;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+button,
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Main content wrapper */
+.wrapper {
+  background-color: #ffffff;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0.5em;
+  width: 80%;
+}
+
+/********** Components **********/

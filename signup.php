@@ -1,5 +1,5 @@
 <?php
-include_once 'header.php';
+include_once 'includes/globals/header.php';
 
 $error = $_SERVER['QUERY_STRING'];//Check for any errors sent back 
 $errorMsg = "";//Message to show the user an error
@@ -54,5 +54,5 @@ if (strlen($error) > 0){//If there is an error that has been sent back
 </div>
 
 <?php
-include_once 'footer.php';
+include_once 'includes/globals/footer.php';
 ?>
