@@ -3,3 +3,31 @@
     - Author: Alex Megahy
     - Description: All styles used for Login/Logout
 ------------------------------------------- */
+
+/* Submit buttons */
+.submit-btn{
+    background-color: $nav-bar-btn-BG;
+    border: $nav-bar-btn-border;
+    color: $nav-bar-btn-colour;
+    font-size: 1em;
+    font-weight: 600;
+    height: 2.2em;
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
+    text-align: center;
+
+    &:hover{
+        @extend .submit-btn;
+        background-color: $nav-bar-btn-hover-BG;
+    }
+}
+
+/* Inputs for login in nav bar */
+.loginInput{
+    background-color: $login-BG;
+    border: $login-border;
+    color: $login-colour;
+    font-size: 1em;
+    outline: none;
+    padding: .5em;
+}

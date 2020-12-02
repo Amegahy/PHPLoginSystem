@@ -4,13 +4,19 @@
     - Description: All structural classes used globally
 ------------------------------------------- */
 
+* {
+    box-sizing: border-box;
+}
+
 body{
     background-color: $body-BG;
+    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
 }
+
 
 button, 
 a {
@@ -18,11 +24,44 @@ a {
     text-decoration: none;
 }
 
+p{
+    font-size: 1em;
+    font-weight: 400;
+}
+
 /* Main content wrapper */
 .wrapper {
     background-color: $wrapper-BG;
     height: 100%;
     margin: 0 auto;
-    padding: .5em;
+    padding: 3em;
     width: 80%;
+}
+
+/* Heading types */
+.main-heading{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.heading{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.sub-heading{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Absolute position */
+.left{
+    position: absolute; 
+    left: 0;
+}
+
+.right {
+    position: absolute; 
+    right: 0;
 }

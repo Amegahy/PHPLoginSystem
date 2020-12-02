@@ -3,3 +3,121 @@
     - Author: Alex Megahy
     - Description: All imports used on register.php
 ------------------------------------------- */
+/********** Globals **********/
+/* DOCUMENT INFORMATION
+    - Document: All global styling
+    - Author: Alex Megahy
+    - Description: All imports used on gloablly
+------------------------------------------- */
+/* DOCUMENT INFORMATION
+    - Document: Global variables
+    - Author: Alex Megahy
+    - Description: All variables used globally
+------------------------------------------- */
+/* Core colours */
+/* Page */
+/* Wrapper */
+/* Navigation Bar */
+/* Footer */
+/* Login */
+/* Register */
+/* DOCUMENT INFORMATION
+    - Document: Navigation Bar Styling
+    - Author: Alex Megahy
+    - Description: All styles used for nav bar
+------------------------------------------- */
+/* Navigation bar container */
+.nav-bar {
+  background-color: #002266;
+  border: 1px solid #000000;
+  display: inline-flex;
+  height: auto;
+  padding: 1em 0.5em;
+  width: 100%;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: Global structure
+    - Author: Alex Megahy
+    - Description: All structural classes used globally
+------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #464646;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+button,
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* Main content wrapper */
+.wrapper {
+  background-color: #ffffff;
+  height: 100%;
+  margin: 0 auto;
+  padding: 3em;
+  width: 80%;
+}
+
+/* Heading types */
+.main-heading {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.sub-heading {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+/* Absolute position */
+.left {
+  position: absolute;
+  left: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: Footer styles
+    - Author: Alex Megahy
+    - Description: All footer stylings
+------------------------------------------- */
+.footer {
+  background-color: #000000;
+  bottom: 0;
+  height: 3em;
+  width: 100%;
+  position: absolute;
+}
+
+/********** Components **********/
+/* DOCUMENT INFORMATION
+    - Document: Register Styling
+    - Author: Alex Megahy
+    - Description: All styles used for register functionality
+------------------------------------------- */

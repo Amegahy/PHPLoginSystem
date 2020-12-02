@@ -37,16 +37,16 @@ session_start ();
 		if (isset($_SESSION['u_id'])) {//If user has logged in 
 
 			echo '<form action = "includes/login/logout.inc.php" method ="POST">
-					<button type = "submit" name = "submit">Logout</button>
+					<button class= "submit-btn" type = "submit" name = "submit">Logout</button>
 					</form>';
 		}else {
 
 			echo '<form action = "includes/login/login.inc.php" method = "POST">
-						<input type="text" name="uid" placeholder="'.$uidErrorMsg.'">
-						<input type="password" name="pwd" placeholder="'.$pwdErrorMsg.'">
-						<button type="submit" name="submit">Login</button>
+						<input class="loginInput" type="text" name="uid" placeholder="'.$uidErrorMsg.'">
+						<input class="loginInput" type="password" name="pwd" placeholder="'.$pwdErrorMsg.'">
+						<button class= "submit-btn" type="submit" name="submit">Login</button>
 					</form>
-					<button><a href="signup.php">Sign up</a></button>';
+					<a class= "submit-btn right" href="signup.php">Sign up</a>';
 		}
 		
 		?>

@@ -1,4 +1,5 @@
 <?php
+$cssFile = "register.css";
 include_once 'includes/globals/header.php';
 
 $error = $_SERVER['QUERY_STRING'];//Check for any errors sent back 

@@ -3,3 +3,12 @@
     - Author: Alex Megahy
     - Description: All imports used on register.php
 ------------------------------------------- */
+
+/********** Globals **********/
+
+@import '../global/globals.scss';
+
+
+/********** Components **********/
+
+@import '../components/register.scss';
