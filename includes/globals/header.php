@@ -6,7 +6,7 @@ session_start ();
 <html>
 <head>
 
-<link rel="stylesheet" type="text/css" href="styles/css/<?php echo $cssFile ?>">
+<link rel="stylesheet" type="text/css" href="assets/css/<?php echo $cssFile ?>">
 </head>
 <body>
 
@@ -41,12 +41,10 @@ session_start ();
 					</form>';
 		}else {
 
-			echo '<form action = "includes/login/login.inc.php" method = "POST">
-						<input class="loginInput" type="text" name="uid" placeholder="'.$uidErrorMsg.'">
-						<input class="loginInput" type="password" name="pwd" placeholder="'.$pwdErrorMsg.'">
-						<button class= "submit-btn" type="submit" name="submit">Login</button>
-					</form>
-					<a class= "submit-btn right" href="signup.php">Sign up</a>';
+			echo '<div class="right">
+						<button class= "submit-btn loginPopup" type="submit" name="submit">Login</button>
+						<a class= "submit-btn" href="signup.php">Sign up</a>
+					</div>';
 		}
 		
 		?>
