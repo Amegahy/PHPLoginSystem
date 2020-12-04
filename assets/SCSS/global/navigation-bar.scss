@@ -1,0 +1,19 @@
+/* DOCUMENT INFORMATION
+    - Document: Navigation Bar Styling
+    - Author: Alex Megahy
+    - Description: All styles used for nav bar
+------------------------------------------- */
+
+/* Navigation bar container */
+.nav-bar {
+    background-color: $nav-bar-BG;
+    border: $nav-bar-border;
+    display: inline-block;
+    height: auto;
+    padding: 1em .5em;
+    width: 100%;
+
+    .nav-bar-btn {
+        float: right;
+    }
+}
