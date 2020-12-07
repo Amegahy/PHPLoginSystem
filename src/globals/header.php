@@ -8,7 +8,7 @@ session_start ();
 
 <link rel="stylesheet" type="text/css" href="../assets/CSS/<?php echo $importFile ?>.css">
 <script src="../node_modules\jquery\dist\jquery.min.js"></script>
-<script src="../assets\JS\lib\<?php echo $importFile ?>.js"></script>
+<script src="../assets\JS\<?php echo $importFile ?>.js"></script>
 </head>
 <body>
 
