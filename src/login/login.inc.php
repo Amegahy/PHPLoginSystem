@@ -5,7 +5,7 @@ session_start ();
 //Check if user clicked the login button
 if (isset($_POST['submit'])) {
 	
-	include '../src/globals/dbh.inc.php';//Includes the php file which makes the connection
+	include '../globals/dbh.inc.php';//Includes the php file which makes the connection
 
 	$uid = mysqli_real_escape_string($conn, $_POST['uid']);	
 	$pwd = mysqli_real_escape_string($conn, $_POST['pwd']);	
@@ -49,7 +49,8 @@ if (isset($_POST['submit'])) {
 			}
 		}
 	}
-}else {
-		header("Location: ../../public/index.php?login=NotPressed");
-		exit();
-	}
+}
+else {
+	header("Location: ../../public/index.php?login=NotPressed");
+	exit();
+}

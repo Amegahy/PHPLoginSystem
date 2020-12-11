@@ -1,0 +1,37 @@
+/* DOCUMENT INFORMATION
+    - Document: Popup Styling
+    - Author: Alex Megahy
+    - Description: All styles used for centeral popup
+------------------------------------------- */
+
+/* Main popup container */
+.popup {
+    background: $popUp-BG;
+    display: flex;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Main form container */
+.formContainer {
+    background-color: black;
+    display: flex;
+    height: fit-content;
+    margin: auto;
+    padding: 5% 0;
+    position: relative;
+    width: 50%;
+
+    /* Main submission form container */
+    .submitForm{
+        margin: auto;
+        width: 100%;
+
+        .submit-btn {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
