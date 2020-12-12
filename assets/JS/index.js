@@ -12,9 +12,10 @@ $(document).ready(function(){
         $(formPopup).addClass("popup");        
         $(formContainer).addClass("formContainer");
 
-        var form = "<form class=\"submitForm\" action = \"../src/login/login.inc.php\" method = \"POST\">" +
+        var form = "<form class=\"submitForm\">" +
         "<input class=\"loginInput\" type=\"text\" name=\"uid\" placeholder=\"Username or Email\">" +
         "<input class=\"loginInput\" type=\"password\" name=\"pwd\" placeholder=\"Password\">" + 
+        "<p class=\"loginError\"></p>" +
         "<button class= \"submit-btn\" type=\"submit\" name=\"submit\">Login</button>" +
         "</form>";
 
@@ -24,18 +25,39 @@ $(document).ready(function(){
     });
 
     // Error handling on forms
-    $('body').on('submit', '.loginForm', function(e) {
+    $('body').on('submit', '.submitForm', function(e) {
         e.preventDefault();
-        if($(".loginInput:nth-of-type(1)").val() === ""){
-        }else{
+        var username = $(".loginInput:nth-of-type(1)");
+        var password = $(".loginInput:nth-of-type(2)");
+
+        // Empty check
+        if($(username).val() === ""){
+            $(username).val("");
+            $(username).attr("placeholder", "Please enter a username");
+        }
+        if($(password).val() === ""){
+            $(password).val("");
+            $(password).attr("placeholder", "Please enter a password");
+        }
+        // Send data to php file
+        else{
             $.ajax({
-                type: 'POST',
-                url: '../src/components/login.inc.php',
-                data: $('form').serialize(),
-                success: function () {
-                  alert('form was submitted');
+                url:'../src/login/login.inc.php',
+                type:'post',
+                data:{username:$(username).val(),password:$(password).val()},
+                success:function(response) {
+                    handleResponse(response, username, password);
                 }
             });
         }
     });
 });
+
+// Handle the login form result
+function handleResponse(response, username, password){
+    if(response == "Incorrect"){
+        $(".loginError").html("Your username or password is incorrect");
+    }else {
+        //success
+    }
+}

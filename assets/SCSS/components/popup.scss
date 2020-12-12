@@ -16,7 +16,7 @@
 
 /* Main form container */
 .formContainer {
-    background-color: black;
+    background-color: $formContainer-BG;
     display: flex;
     height: fit-content;
     margin: auto;
@@ -27,7 +27,7 @@
     /* Main submission form container */
     .submitForm{
         margin: auto;
-        width: 100%;
+        width: 50%;
 
         .submit-btn {
             display: block;

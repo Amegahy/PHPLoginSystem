@@ -154,7 +154,14 @@ p {
   margin: 2em auto;
   outline: none;
   padding: 0.5em;
-  width: 50%;
+  width: 100%;
+}
+
+/* Error message */
+.loginError {
+  color: red;
+  font-weight: 600;
+  margin: 1em auto;
 }
 
 /* DOCUMENT INFORMATION
@@ -174,7 +181,7 @@ p {
 
 /* Main form container */
 .formContainer {
-  background-color: black;
+  background-color: #02194b;
   display: flex;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -187,7 +194,7 @@ p {
 }
 .formContainer .submitForm {
   margin: auto;
-  width: 100%;
+  width: 50%;
 }
 .formContainer .submitForm .submit-btn {
   display: block;
