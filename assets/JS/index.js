@@ -9,8 +9,13 @@ $(document).ready(function(){
     $(".loginPopup").click(function(){
         var formPopup =  document.createElement("div");
         var formContainer =  document.createElement("div");
+        var closeButton =  document.createElement("button");
+
         $(formPopup).addClass("popup");        
         $(formContainer).addClass("formContainer");
+        $(closeButton).addClass("closeButton");
+
+        $(closeButton).html("X");
 
         var form = "<form class=\"submitForm\">" +
         "<input class=\"loginInput\" type=\"text\" name=\"uid\" placeholder=\"Username or Email\">" +
@@ -19,6 +24,7 @@ $(document).ready(function(){
         "<button class= \"submit-btn\" type=\"submit\" name=\"submit\">Login</button>" +
         "</form>";
 
+        $(formContainer).append(closeButton);
         $(formContainer).append(form);
         $(formPopup).append(formContainer);
         $("body").append(formPopup);
@@ -50,6 +56,11 @@ $(document).ready(function(){
                 }
             });
         }
+    });
+
+    // Close popup form
+    $('body').on('click', '.closeButton', function() {
+        $(".popup").remove();
     });
 });
 

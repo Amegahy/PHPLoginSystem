@@ -34,4 +34,17 @@
             margin: 0 auto;
         }
     }
+
+    /* Close popup button */
+    .closeButton{
+        background-color: $popUp-closeBtn-BG;
+        border: none;
+        border-radius: 20px;
+        height: fit-content;
+        outline: none;
+        padding: .5em .7em;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
 }

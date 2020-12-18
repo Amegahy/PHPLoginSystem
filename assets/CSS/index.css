@@ -191,6 +191,7 @@ p {
   position: relative;
   width: 50%;
   /* Main submission form container */
+  /* Close popup button */
 }
 .formContainer .submitForm {
   margin: auto;
@@ -199,4 +200,17 @@ p {
 .formContainer .submitForm .submit-btn {
   display: block;
   margin: 0 auto;
+}
+.formContainer .closeButton {
+  background-color: #5e0000;
+  border: none;
+  border-radius: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  outline: none;
+  padding: 0.5em 0.7em;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
