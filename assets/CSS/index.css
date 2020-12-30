@@ -128,7 +128,7 @@ p {
     - Author: Alex Megahy
     - Description: All styles used for Login/Logout
 ------------------------------------------- */
-/* Submit buttons */
+/* Navigation submut buttons */
 .submit-btn, .submit-btn:hover {
   background-color: #4d88ff;
   border: 1px solid #000000;
@@ -144,8 +144,32 @@ p {
   background-color: #cccccc;
 }
 
-/* Inputs for login in nav bar */
-.loginInput {
+/* Main form container */
+.formContainer {
+  background-color: #02194b;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 5% 0;
+  position: relative;
+  width: 50%;
+  /* Main submission form container */
+  /* Error message */
+  /* Close popup button */
+}
+.formContainer .submitForm {
+  margin: auto;
+  width: 50%;
+  /* Form submit */
+  /* Inputs for form */
+}
+.formContainer .submitForm .submit-btn {
+  display: block;
+  margin: 0 auto;
+}
+.formContainer .submitForm input {
   background-color: #ffffff;
   border: 1px solid #000000;
   color: #000000;
@@ -156,12 +180,23 @@ p {
   padding: 0.5em;
   width: 100%;
 }
-
-/* Error message */
-.loginError {
+.formContainer .formError {
   color: red;
   font-weight: 600;
   margin: 1em auto;
+}
+.formContainer .closeButton {
+  background-color: #5e0000;
+  border: none;
+  border-radius: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  outline: none;
+  padding: 0.5em 0.7em;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 /* DOCUMENT INFORMATION
@@ -177,40 +212,4 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-/* Main form container */
-.formContainer {
-  background-color: #02194b;
-  display: flex;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: auto;
-  padding: 5% 0;
-  position: relative;
-  width: 50%;
-  /* Main submission form container */
-  /* Close popup button */
-}
-.formContainer .submitForm {
-  margin: auto;
-  width: 50%;
-}
-.formContainer .submitForm .submit-btn {
-  display: block;
-  margin: 0 auto;
-}
-.formContainer .closeButton {
-  background-color: #5e0000;
-  border: none;
-  border-radius: 20px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  outline: none;
-  padding: 0.5em 0.7em;
-  position: absolute;
-  right: 10px;
-  top: 10px;
 }

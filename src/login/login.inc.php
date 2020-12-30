@@ -3,12 +3,8 @@
 include '../globals/dbh.inc.php';//Includes the php file which makes the connection
 session_start ();
 
-//Check if user clicked the login button
-
 $uid = mysqli_real_escape_string($conn, $_POST['username']);	
 $pwd = mysqli_real_escape_string($conn, $_POST['password']);	
-
-/** Error handlers **/
 
 //Check for the user name/email in the database
 $sql = "SELECT * FROM users WHERE user_uid ='$uid' OR user_email ='$uid'";

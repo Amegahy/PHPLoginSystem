@@ -13,38 +13,3 @@
     top: 0;
     width: 100%;
 }
-
-/* Main form container */
-.formContainer {
-    background-color: $formContainer-BG;
-    display: flex;
-    height: fit-content;
-    margin: auto;
-    padding: 5% 0;
-    position: relative;
-    width: 50%;
-
-    /* Main submission form container */
-    .submitForm{
-        margin: auto;
-        width: 50%;
-
-        .submit-btn {
-            display: block;
-            margin: 0 auto;
-        }
-    }
-
-    /* Close popup button */
-    .closeButton{
-        background-color: $popUp-closeBtn-BG;
-        border: none;
-        border-radius: 20px;
-        height: fit-content;
-        outline: none;
-        padding: .5em .7em;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-    }
-}
