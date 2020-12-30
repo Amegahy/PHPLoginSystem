@@ -96,7 +96,7 @@ function handleResponse(form, response){
     }else if(response == "Incorrect" && form === "signup"){
         $(".formError").html("Oops, something went wrong. It is possibile this user already exists");
     }else{
-        alert("Success");
+        location.reload();
     }
 }
 

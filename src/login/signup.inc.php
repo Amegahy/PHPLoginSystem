@@ -25,7 +25,6 @@ else {
 	//Insert the user into the database
 	$sql = "INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) VALUES ('$fName', '$lName','$email', '$uid', '$hashedPwd');";
 	mysqli_query($conn, $sql);
-	header("Location: ../../public/index.php");
 
 	/* Reset the SESSION values since the user has created an account */
 	$_SESSION['first']= "";
