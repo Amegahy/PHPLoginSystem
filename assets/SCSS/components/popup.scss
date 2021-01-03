@@ -1,0 +1,29 @@
+/* DOCUMENT INFORMATION
+    - Document: Popup Styling
+    - Author: Alex Megahy
+    - Description: All styles used for centeral popup
+------------------------------------------- */
+
+/* Main popup container */
+.popup {
+    background: $popUp-BG;
+    display: flex;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    /* Close popup button */
+    .closeButton{
+        background-color: $popUp-closeBtn-BG;
+        border: none;
+        border-radius: 20px;
+        font-weight: $bold-weight;
+        height: fit-content;
+        outline: none;
+        padding: .5em .7em;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}

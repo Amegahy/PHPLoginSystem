@@ -1,0 +1,219 @@
+/* DOCUMENT INFORMATION
+    - Document: index.php Styling
+    - Author: Alex Megahy
+    - Description: All imports used on index.php
+------------------------------------------- */
+/********** Globals **********/
+/* DOCUMENT INFORMATION
+    - Document: All global styling
+    - Author: Alex Megahy
+    - Description: All imports used on gloablly
+------------------------------------------- */
+/* DOCUMENT INFORMATION
+    - Document: Global variables
+    - Author: Alex Megahy
+    - Description: All variables used globally
+------------------------------------------- */
+/* Core colours */
+/* Font weights */
+/* Page */
+/* Wrapper */
+/* Navigation Bar */
+/* Pop Up */
+/* Footer */
+/* Login */
+/* DOCUMENT INFORMATION
+    - Document: Navigation Bar Styling
+    - Author: Alex Megahy
+    - Description: All styles used for nav bar
+------------------------------------------- */
+/* Navigation bar container */
+.nav-bar {
+  background-color: #011848;
+  border: 1px solid #000000;
+  display: inline-block;
+  height: auto;
+  padding: 1em 0.5em;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.nav-bar .nav-bar-btn {
+  float: right;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: Global structure
+    - Author: Alex Megahy
+    - Description: All structural classes used globally
+------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cccccc;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+button,
+a {
+  color: #000000;
+  text-decoration: none;
+}
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* Main content wrapper */
+.wrapper {
+  background-color: #ffffff;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 3em;
+  width: 80%;
+}
+
+/* Heading types */
+.main-heading {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.sub-heading {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+/* Absolute position */
+.left {
+  position: absolute;
+  left: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: Footer styles
+    - Author: Alex Megahy
+    - Description: All footer stylings
+------------------------------------------- */
+.footer {
+  background-color: #000000;
+  bottom: 0;
+  height: 3em;
+  width: 100%;
+}
+
+/********** Components **********/
+/* DOCUMENT INFORMATION
+    - Document: Login/Logout Styling
+    - Author: Alex Megahy
+    - Description: All styles used for Login/Logout
+------------------------------------------- */
+/* Navigation submut buttons */
+.submit-btn, .submit-btn:hover {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 1em;
+  font-weight: 600;
+  height: 2.2em;
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.submit-btn:hover {
+  background-color: #cccccc;
+}
+
+/* Main form container */
+.formContainer {
+  background-color: #011848;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 5% 0;
+  position: relative;
+  width: 50%;
+  /* Main submission form container */
+  /* Error message */
+}
+.formContainer .submitForm {
+  margin: auto;
+  width: 50%;
+  /* Form submit */
+  /* Inputs for form */
+}
+.formContainer .submitForm .submit-btn {
+  display: block;
+  margin: 0 auto;
+}
+.formContainer .submitForm input {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  display: block;
+  font-size: 1em;
+  margin: 2em auto;
+  outline: none;
+  padding: 0.5em;
+  width: 100%;
+}
+.formContainer .formError {
+  color: #de0000;
+  font-weight: 600;
+  margin: 1em auto;
+}
+
+/* DOCUMENT INFORMATION
+    - Document: Popup Styling
+    - Author: Alex Megahy
+    - Description: All styles used for centeral popup
+------------------------------------------- */
+/* Main popup container */
+.popup {
+  background: #000000a8;
+  display: flex;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* Close popup button */
+}
+.popup .closeButton {
+  background-color: #de0000;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  outline: none;
+  padding: 0.5em 0.7em;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

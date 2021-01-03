@@ -1,0 +1,41 @@
+/* DOCUMENT INFORMATION
+    - Document: Global variables
+    - Author: Alex Megahy
+    - Description: All variables used globally
+------------------------------------------- */
+
+/* Core colours */
+$white: #ffffff;
+$black: #000000;
+$error:  #de0000;
+
+/* Font weights */
+$bold-weight: 600;
+$light-weight: 400;
+
+/* Page */
+$body-BG: #cccccc;
+
+/* Wrapper */
+$wrapper-BG: $white;
+
+/* Navigation Bar */
+$nav-bar-BG: #011848;
+$nav-bar-border: 1px solid $black;
+$nav-bar-btn-BG: $white;
+$nav-bar-btn-border: 1px solid $black;
+$nav-bar-btn-colour: $black;
+$nav-bar-btn-hover-BG: #cccccc;
+
+/* Pop Up */
+$popUp-BG: #000000a8;
+$formContainer-BG: #011848;
+$popUp-closeBtn-BG: $error;
+
+/* Footer */
+$footer-BG: $black;
+
+/* Login */
+$login-border: 1px solid $black;
+$login-colour: $black;
+$login-BG: $white;
