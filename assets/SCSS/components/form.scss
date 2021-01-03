@@ -59,21 +59,8 @@
     
     /* Error message */
     .formError {
-        color: red;
-        font-weight: 600;
+        color: $error;
+        font-weight: $bold-weight;
         margin: 1em auto;
-    }
-
-    /* Close popup button */
-    .closeButton{
-        background-color: $popUp-closeBtn-BG;
-        border: none;
-        border-radius: 20px;
-        height: fit-content;
-        outline: none;
-        padding: .5em .7em;
-        position: absolute;
-        right: 10px;
-        top: 10px;
     }
 }

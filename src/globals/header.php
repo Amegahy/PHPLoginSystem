@@ -14,23 +14,15 @@ session_start ();
 
 	<div class = "nav-bar">
 		<?php
-
-			/* Checking for log in errors that have been sent back */
-			$error = $_SERVER['QUERY_STRING'];
-			$uidErrorMsg  = "";// Error message to be shown in username slot
-			$pwdErrorMsg = "";// Error message to be shown in password slot
-
-			if (isset($_SESSION['u_id'])) {//If user has logged in 
+			if (isset($_SESSION['u_id'])) { //If user has logged in 
 				echo '<div class="nav-bar-btn">
-						<form action = "src/login/logout.inc.php" method = "POST">
-							<button class= "submit-btn" type = "submit" name = "submit">Logout</button>
-						</form>
+						<button class= "submit-btn signout">Sign out</button>
 					</div>';
 			}else {
 				echo '<div class="nav-bar-btn">
-							<button class= "submit-btn loginPopup">Login</button>
-							<button class= "submit-btn signupPopup">Sign up</button>
-						</div>';
+						<button class= "submit-btn loginPopup">Login</button>
+						<button class= "submit-btn signupPopup">Sign up</button>
+					</div>';
 			}
 		
 		?>

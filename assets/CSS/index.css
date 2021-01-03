@@ -15,13 +15,13 @@
     - Description: All variables used globally
 ------------------------------------------- */
 /* Core colours */
+/* Font weights */
 /* Page */
 /* Wrapper */
 /* Navigation Bar */
 /* Pop Up */
 /* Footer */
 /* Login */
-/* Register */
 /* DOCUMENT INFORMATION
     - Document: Navigation Bar Styling
     - Author: Alex Megahy
@@ -29,11 +29,13 @@
 ------------------------------------------- */
 /* Navigation bar container */
 .nav-bar {
-  background-color: #002266;
+  background-color: #011848;
   border: 1px solid #000000;
   display: inline-block;
   height: auto;
   padding: 1em 0.5em;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 .nav-bar .nav-bar-btn {
@@ -50,7 +52,7 @@
 }
 
 body {
-  background-color: #464646;
+  background-color: #cccccc;
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
   margin: 0;
@@ -78,6 +80,7 @@ p {
   background-color: #ffffff;
   height: 100%;
   margin: 0 auto;
+  margin-top: 10px;
   padding: 3em;
   width: 80%;
 }
@@ -130,7 +133,7 @@ p {
 ------------------------------------------- */
 /* Navigation submut buttons */
 .submit-btn, .submit-btn:hover {
-  background-color: #4d88ff;
+  background-color: #ffffff;
   border: 1px solid #000000;
   color: #000000;
   font-size: 1em;
@@ -146,7 +149,7 @@ p {
 
 /* Main form container */
 .formContainer {
-  background-color: #02194b;
+  background-color: #011848;
   display: flex;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -157,7 +160,6 @@ p {
   width: 50%;
   /* Main submission form container */
   /* Error message */
-  /* Close popup button */
 }
 .formContainer .submitForm {
   margin: auto;
@@ -181,22 +183,9 @@ p {
   width: 100%;
 }
 .formContainer .formError {
-  color: red;
+  color: #de0000;
   font-weight: 600;
   margin: 1em auto;
-}
-.formContainer .closeButton {
-  background-color: #5e0000;
-  border: none;
-  border-radius: 20px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  outline: none;
-  padding: 0.5em 0.7em;
-  position: absolute;
-  right: 10px;
-  top: 10px;
 }
 
 /* DOCUMENT INFORMATION
@@ -212,4 +201,19 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
+  /* Close popup button */
+}
+.popup .closeButton {
+  background-color: #de0000;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  outline: none;
+  padding: 0.5em 0.7em;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }

@@ -32,6 +32,16 @@ $(document).ready(function(){
         createFormPopup(form);
     });
 
+    // Sign user out
+    $(".signout").click(function(){
+        $.ajax({
+            url:'../src/login/logout.inc.php',
+            type:'post',
+            success:function(response) {
+                handleResponse(response);
+            }
+        });
+    });
 
     // Error handling on login form
     $('body').on('submit', '#loginForm', function(e) {
